@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "scripts": {
+    "install": "pwd && yum install ruby23-devel.x86_64 && gem install bundler --no-ri --no-rdoc && bundle install",
+    "build": "jekyll build && ls -l"
+  }
+}

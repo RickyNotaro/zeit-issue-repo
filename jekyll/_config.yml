@@ -1,0 +1,25 @@
+title: 'TEST SITE'
+permalink: /blog/:title
+description: >
+  TEST SITE.
+email: exemple@exemple.com
+phone: '+1 00000000'
+link: exemple.com
+markdown: kramdown
+address:
+  locality: Montreal
+  country: Canada
+
+social:
+  - title: facebook
+    link: https://www.facebook.com/exemple/
+    icon: fa-facebook
+  - title: linkedin
+    link: https://www.linkedin.com/company/exemple/
+    icon: fa-linkedin
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "jekyll/assets/$1",
+      "headers": { "Cache-Control": "max-age=3600" }
+    },
+    {"src": "/(.*)", "dest": "$1"}
+  ],
+  "builds": [
+    {
+      "src": "jekyll/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "_site" }
+    }]
+}
