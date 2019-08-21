@@ -1,13 +1,13 @@
 {
   "version": 2,
   "routes": [
-    {"src": "/","dest": "index.html"},
-    {"src": "/(.*)", "dest": "$1.html"}
+    {"src": "/","dest": "jekyll/index.html"},
+    {"src": "/(.*)", "dest": "jekyll/$1.html"}
   ],
   "builds": [
     {
       "src": "jekyll/package.json",
       "use": "@now/static-build",
-      "config": { "distDir": "jekyll/_site" }
+      "config": { "distDir": "_site" }
     }]
 }
